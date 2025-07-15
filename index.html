@@ -37,5 +37,12 @@
     <!-- #$AUTHOR:iwoolsey -->
   </map>
   <script src="imageMapResizer.min.js"></script>
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    if (window.top !== window.self) {
+      imageMapResize(); //← this runs the resizer
+    }
+  });
+</script>
 </body>
 </html>
